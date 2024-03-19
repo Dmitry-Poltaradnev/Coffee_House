@@ -1,0 +1,88 @@
+body.lock {
+  overflow: hidden;
+}
+.header__menu {
+  display: none;
+}
+.menu__icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #665f55;
+  position: relative;
+  cursor: pointer;
+}
+.menu__icon span {
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: #403f3d;
+  left: 30%;
+  top: 35%;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+.menu__icon span:last-child {
+  top: 60%;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding-top: 66px;
+}
+.menu__link {
+  color: #403f3d;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .menu__body {
+    position: fixed;
+    right: -100%;
+    top: 95px;
+    height: 100vh;
+    width: 100%;
+    background: #e1d4c9;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+  .menu__body.active {
+    right: 0%;
+  }
+  .header__menu {
+    display: block;
+  }
+  .menu__item:last-child {
+    margin-top: 40px;
+    margin-left: -55px;
+  }
+
+  .menu__icon.active span {
+    transform: scale(0);
+  }
+  .menu__icon.active span:first-child {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+  .menu__icon.active span:last-child {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .menu__coffee::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 16px;
+    background: url(../img/coffee-cup-big.svg);
+    background-repeat: no-repeat;
+  }
+}

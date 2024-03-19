@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/itemsPage.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="icon" href="img/coffeCupIcon.svg" type="image/x-icon" />
+    <title>Tea</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html"
+          ><img class="header__logo" src="img/logo.svg" alt="headerLogo"
+        /></a>
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html#favouritesCoffee" class="menu__link"
+                  >Favorite coffee</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="index.html#about" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#mobileApp" class="menu__link">Mobile app</a>
+              </li>
+              <li class="menu__item">
+                <a href="#footer" class="menu__link">Contact us</a>
+              </li>
+              <li class="menu__item">
+                <a href="Coffee.html" class="menu__link menu__coffee">Menu</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html#favouritesCoffee" class="navigation__link"
+                >Favorite coffee</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="index.html#about" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="index.html#mobileApp" class="navigation__link"
+                >Mobile app</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#footer" class="navigation__link">Contact us </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="Coffee.html"
+          class="header__link navigation__link link__disabled"
+          >Menu</a
+        >
+      </div>
+    </header>
+    <div class="main">
+      <h1 class="visually-hidden">Coffee-House</h1>
+      <div class="main__container container">
+        <h2 class="main__title">
+          Behind each of our cups hides an
+          <span class="main__title_warning">amazing surprise</span>
+        </h2>
+        <div class="options__container">
+          <div class="options__list">
+            <a href="Coffee.html"
+              ><div class="option__item option__unactive">
+                <img
+                  src="img/coffeCupIcon.svg"
+                  alt="iconNavigate"
+                  class="option__image"
+                />Coffee
+              </div></a
+            >
+            <a class="link__disabled" href="Tea.html">
+              <div class="option__item option__active">
+                <img
+                  src="img/teaCoupleIcon.svg"
+                  alt="iconNavigate"
+                  class="option__image"
+                />Tea
+              </div></a
+            >
+            <a href="Dessert.html"
+              ><div class="option__item option__unactive">
+                <img
+                  src="img/piceOfCaceIcon.svg"
+                  alt="iconNavigate"
+                  class="option__image"
+                />Dessert
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="shop__container">
+          <div class="modal"></div>
+          <ul class="shop__list">
+            <li class="shop__item" data-index="8">
+              <div class="shop__item_img">
+                <img src="img/tea-1.jpg" alt="itemImg" />
+              </div>
+              <div class="shop__item_info">
+                <h3 class="shop__item-title">Moroccan</h3>
+                <p class="shop__item-description">
+                  Fragrant black tea with the addition of tangerine, cinnamon,
+                  honey, lemon and mint
+                </p>
+                <p class="shop__item-price">$4.50</p>
+              </div>
+            </li>
+            <li class="shop__item" data-index="9">
+              <div class="shop__item_img">
+                <img src="img/tea-2.jpg" alt="itemImg" />
+              </div>
+              <div class="shop__item_info">
+                <h3 class="shop__item-title">Ginger</h3>
+                <p class="shop__item-description">
+                  Original black tea with fresh ginger, lemon and honey
+                </p>
+                <p class="shop__item-price">$5.00</p>
+              </div>
+            </li>
+            <li class="shop__item" data-index="10">
+              <div class="shop__item_img">
+                <img src="img/tea-3.jpg" alt="itemImg" />
+              </div>
+              <div class="shop__item_info">
+                <h3 class="shop__item-title">Cranberry</h3>
+                <p class="shop__item-description">
+                  Invigorating black tea with cranberry and honey
+                </p>
+                <p class="shop__item-price">$5.00</p>
+              </div>
+            </li>
+            <li class="shop__item" data-index="11">
+              <div class="shop__item_img">
+                <img src="img/tea-4.jpg" alt="itemImg" />
+              </div>
+              <div class="shop__item_info">
+                <h3 class="shop__item-title">Sea buckthorn</h3>
+                <p class="shop__item-description">
+                  Toning sweet black tea with sea buckthorn, fresh thyme and
+                  cinnamon
+                </p>
+                <p class="shop__item-price">$5.50</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__social">
+            <h2 class="footer__title">
+              Sip, Savor, Smile.
+              <span class="footer__title_warning">It’s coffee time!</span>
+            </h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a target="_blank" href="https://twitter.com/x">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a target="_blank" href="https://www.instagram.com/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                      stroke="currentColor"
+                    />
+                    <path
+                      d="M17.5 6.51L17.51 6.49889"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a target="_blank" href="https://www.facebook.com/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <h3 class="contacts__title">Contact us</h3>
+            <ul class="contacts__info">
+              <li class="contacts__item contacts__item-link">
+                <a
+                  target="blank"
+                  href="https://www.tripadvisor.ru/Restaurants-g294195-c8-Tbilisi.html"
+                  ><img src="img/locationImg.svg" alt="location" />8558 Green
+                  Rd., LA</a
+                >
+              </li>
+              <li class="contacts__item contacts__item-link">
+                <a target="blank" href="tel:+16035550123"
+                  ><img src="img/phoneImg.svg" alt="phone" />+1 (603)
+                  555-0123</a
+                >
+              </li>
+              <li class="contacts__item item__info_wrapper">
+                <img src="img/clockImg.svg" alt="scelude" />
+                <span class="contacts__item_info"
+                  >Mon-Sat: 9:00 AM – 23:00 PM</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="modal.js"></script>
+    <script src="burger.js"></script>
+    <script src="showitems.js"></script>
+  </body>
+</html>

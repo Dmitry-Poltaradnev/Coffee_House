@@ -1,0 +1,72 @@
+.header__container {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.navigation__link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+.navigation__link:before {
+  content: "";
+  position: absolute;
+  transition: transform 0.4s ease;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #403f3d;
+  transform: scaleX(0);
+}
+.navigation__link:hover:before {
+  transform: scaleX(1);
+}
+.header__link {
+  display: flex;
+  gap: 8px;
+}
+.header__link::after {
+  content: "";
+  background-image: url(../img/coffee-cup.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.burger {
+  display: none;
+}
+/* @media (max-width: 1439px) {
+  .header__navigation {
+    display: none;
+  }
+  .navigation__link {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+} */
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+  .navigation__link {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+@media (max-width: 380px) {
+  .header__container {
+    padding: 20px 16px 0px 16px;
+  }
+}

@@ -1,0 +1,65 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2");
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v13-latin-600.woff2") format("woff2");
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2");
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  min-width: 380px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Inter, sans-serif;
+  background-color: #e1d4c9;
+  color: #403f3d;
+}
+img {
+  /* max-width: 100%; */
+  height: auto;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding: 20px 16px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
